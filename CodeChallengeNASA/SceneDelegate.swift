@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,8 +18,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        IQKeyboardManager.shared.enable = true
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        window?.windowScene = windowScene
+        self.window?.makeKeyAndVisible()
+        self.window?.rootViewController = UINavigationController(rootViewController: MilkyWayVC())
+        window?.makeKeyAndVisible()
+        
+        
+        if #available(iOS 13.0, *) { self.window!.overrideUserInterfaceStyle = .light }
+
+
+        enumerateFonts()
     }
+    
+    func enumerateFonts(){
+        for fontFamily in UIFont.familyNames{
+            print("Font family name = \(fontFamily as String)")
+            for fontName in UIFont.fontNames(forFamilyName: fontFamily as String){
+                print("- Font name = \(fontName)")
+            }
+        }
+    }
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
