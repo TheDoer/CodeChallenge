@@ -1,0 +1,6 @@
+framework module Pods_CodeChallengeNASA_CodeChallengeNASAUITests {
+  umbrella header "Pods-CodeChallengeNASA-CodeChallengeNASAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
