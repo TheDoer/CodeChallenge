@@ -25,6 +25,8 @@
 		F36270E72692759A008FC82A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36270E62692759A008FC82A /* BaseVC.swift */; };
 		F36270EC2692769A008FC82A /* SmartFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36270EB2692769A008FC82A /* SmartFont.swift */; };
 		F36270F12692779F008FC82A /* SmartConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36270F02692779F008FC82A /* SmartConst.swift */; };
+		F37CD59D2693B1B000235372 /* TheMilkyWayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CD59C2693B1B000235372 /* TheMilkyWayCell.swift */; };
+		F37CD59F2693B5C100235372 /* GradientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CD59E2693B5C100235372 /* GradientCard.swift */; };
 		FE807961D0DEA0388424257F /* Pods_CodeChallengeNASATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7348D7470123974E740EFBD /* Pods_CodeChallengeNASATests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +76,8 @@
 		F36270E62692759A008FC82A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		F36270EB2692769A008FC82A /* SmartFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFont.swift; sourceTree = "<group>"; };
 		F36270F02692779F008FC82A /* SmartConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartConst.swift; sourceTree = "<group>"; };
-		F36270F4269279D0008FC82A /* poppins_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins_light.otf; sourceTree = "<group>"; };
+		F37CD59C2693B1B000235372 /* TheMilkyWayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMilkyWayCell.swift; sourceTree = "<group>"; };
+		F37CD59E2693B5C100235372 /* GradientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCard.swift; sourceTree = "<group>"; };
 		FB00B0DFBD60ED73B3779D78 /* Pods-CodeChallengeNASATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallengeNASATests.release.xcconfig"; path = "Target Support Files/Pods-CodeChallengeNASATests/Pods-CodeChallengeNASATests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +157,7 @@
 		F1B5015C2690AF1B005BAAD6 /* CodeChallengeNASA */ = {
 			isa = PBXGroup;
 			children = (
+				F37CD59B2693B17E00235372 /* cell */,
 				F36270ED26927722008FC82A /* resource */,
 				F36270EA2692768E008FC82A /* helper */,
 				F1B501A626918C16005BAAD6 /* Controller */,
@@ -242,6 +246,7 @@
 			children = (
 				F36270EB2692769A008FC82A /* SmartFont.swift */,
 				F36270F02692779F008FC82A /* SmartConst.swift */,
+				F37CD59E2693B5C100235372 /* GradientCard.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -257,9 +262,16 @@
 		F36270EE26927737008FC82A /* font */ = {
 			isa = PBXGroup;
 			children = (
-				F36270F4269279D0008FC82A /* poppins_light.otf */,
 			);
 			path = font;
+			sourceTree = "<group>";
+		};
+		F37CD59B2693B17E00235372 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F37CD59C2693B1B000235372 /* TheMilkyWayCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +516,8 @@
 				F1B5019E26918BF6005BAAD6 /* ImagesModel.swift in Sources */,
 				F1B501622690AF1B005BAAD6 /* ViewController.swift in Sources */,
 				F1B5015E2690AF1B005BAAD6 /* AppDelegate.swift in Sources */,
+				F37CD59D2693B1B000235372 /* TheMilkyWayCell.swift in Sources */,
+				F37CD59F2693B5C100235372 /* GradientCard.swift in Sources */,
 				F1B5019526918BE4005BAAD6 /* ApiService.swift in Sources */,
 				F36270F12692779F008FC82A /* SmartConst.swift in Sources */,
 				F1B501602690AF1B005BAAD6 /* SceneDelegate.swift in Sources */,
